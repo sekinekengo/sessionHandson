@@ -1,6 +1,6 @@
 # Spring Boot（Tomcat）＋ React による最小ログイン・セッション共有ハンズオン
 
-本ドキュメントは、Tomcat で管理される2つの別アプリケーション（ログイン用・実務用）間でセッションを共有し、複数 SPA（React）間でも同じセッション ID（JSESSIONID）を共有する最小構成をまとめたものである。
+本ドキュメントは、Tomcat で管理される1つのSpring Bootアプリケーション内でログイン機能と業務機能を分離し、複数 SPA（React）間で同じセッション ID（JSESSIONID）を共有する最小構成をまとめたものである。
 
 ## 注意事項
 
@@ -10,50 +10,83 @@
 ## 全体構成
 
 - **バックエンド**：
-  - ログイン用アプリケーション（Spring Boot WAR → Tomcat にデプロイ）
-  - 実務用アプリケーション（Spring Boot WAR → Tomcat にデプロイ）
-  - 両アプリケーション間でセッション共有
+  - 業務用アプリケーション（Spring Boot WAR → Tomcat にデプロイ）
+    - ログイン用コントローラ（`/api/login`, `/api/session`, `/api/logout`）
+    - 業務用コントローラ（`/api/data`）
+  - 同一アプリケーション内のため、セッションは自動的に共有される
 - **フロントエンド**：
   - ログイン用 SPA（React）
   - 実務用 SPA（React）
 - **通信**：Fetch（credentials: include）
-- **セッション**：Spring 標準 HttpSession（Tomcat で管理、アプリケーション間で共有）
+- **セッション**：Spring 標準 HttpSession（Tomcat で管理、同一アプリケーション内で共有）
 
 ## 1. プロジェクト構成
 
-2つの別々のSpring Bootプロジェクトを作成する。
+1つのSpring Bootプロジェクト（business-app）を作成し、ログイン用と業務用のコントローラを含める。
 
-### 1-1. ログイン用アプリケーション（login-app）
+### 1-1. 業務用アプリケーション（business-app）
 
-#### build.gradle
+#### pom.xml
 
-```gradle
-dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-}
-
-bootWar {
-    enabled = true
-    archiveBaseName = 'login-app'
-}
-
-bootJar {
-    enabled = false
-}
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.0</version>
+        <relativePath/>
+    </parent>
+    
+    <groupId>com.example</groupId>
+    <artifactId>business-app</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+    
+    <name>business-app</name>
+    <description>Business Application</description>
+    
+    <properties>
+        <java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+        <finalName>business-app</finalName>
+    </build>
+</project>
 ```
 
 #### メインクラス
 
 ```java
 @SpringBootApplication
-public class LoginApp extends SpringBootServletInitializer {
+public class BusinessApp extends SpringBootServletInitializer {
     public static void main(String[] args) {
-        SpringApplication.run(LoginApp.class, args);
+        SpringApplication.run(BusinessApp.class, args);
     }
 }
 ```
 
-#### コントローラ
+#### ログイン用コントローラ
 
 ```java
 @RestController
@@ -91,37 +124,7 @@ public class LoginController {
 }
 ```
 
-### 1-2. 実務用アプリケーション（business-app）
-
-#### build.gradle
-
-```gradle
-dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
-}
-
-bootWar {
-    enabled = true
-    archiveBaseName = 'business-app'
-}
-
-bootJar {
-    enabled = false
-}
-```
-
-#### メインクラス
-
-```java
-@SpringBootApplication
-public class BusinessApp extends SpringBootServletInitializer {
-    public static void main(String[] args) {
-        SpringApplication.run(BusinessApp.class, args);
-    }
-}
-```
-
-#### コントローラ
+#### 業務用コントローラ
 
 ```java
 @RestController
@@ -142,24 +145,7 @@ public class BusinessController {
 
 ## 2. CORS 設定
 
-両方のアプリケーションで、複数のSPA（例：localhost:3000, localhost:3001）からアクセスできるよう、複数のオリジンを許可する。
-
-### 2-1. ログイン用アプリケーション
-
-```java
-@Configuration
-public class LoginWebConfig implements WebMvcConfigurer {
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/api/**")
-                .allowedOrigins("http://localhost:3000", "http://localhost:3001")
-                .allowedMethods("GET", "POST")
-                .allowCredentials(true);
-    }
-}
-```
-
-### 2-2. 実務用アプリケーション
+複数のSPA（例：localhost:3000, localhost:3001）からアクセスできるよう、複数のオリジンを許可する。
 
 ```java
 @Configuration
@@ -174,57 +160,33 @@ public class BusinessWebConfig implements WebMvcConfigurer {
 }
 ```
 
-## 3. Tomcat セッション共有設定
+## 3. Tomcat へのデプロイ
 
-Tomcat で異なるアプリケーション間でセッションを共有するため、`context.xml` でセッション Cookie のパスを "/" に設定する。
-
-### 3-1. ログイン用アプリケーションの context.xml
-
-`src/main/webapp/META-INF/context.xml` を作成：
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<Context>
-    <SessionCookiePath>/</SessionCookiePath>
-</Context>
-```
-
-### 3-2. 実務用アプリケーションの context.xml
-
-`src/main/webapp/META-INF/context.xml` を作成：
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<Context>
-    <SessionCookiePath>/</SessionCookiePath>
-</Context>
-```
-
-これにより、両アプリケーションが同じ JSESSIONID Cookie を共有する。
-
-## 4. Tomcat へのデプロイ
-
-1. 両方のアプリケーションを WAR ファイルとしてビルド：
+1. アプリケーションを WAR ファイルとしてビルド：
    ```bash
-   ./gradlew bootWar
+   cd business-app
+   mvn clean package
    ```
 
 2. 生成された WAR ファイルを Tomcat の `webapps` ディレクトリに配置：
-   - `login-app.war` → `$CATALINA_HOME/webapps/login-app.war`
    - `business-app.war` → `$CATALINA_HOME/webapps/business-app.war`
 
 3. Tomcat を起動すると、以下の URL でアクセス可能：
-   - ログイン用：`http://localhost:8080/login-app/api/...`
-   - 実務用：`http://localhost:8080/business-app/api/...`
+   - ログイン用：`http://localhost:8080/business-app/api/login`
+   - セッション確認：`http://localhost:8080/business-app/api/session`
+   - ログアウト：`http://localhost:8080/business-app/api/logout`
+   - 業務用：`http://localhost:8080/business-app/api/data`
 
-## 5. React
+**注意**：同一アプリケーション内のため、セッションは自動的に共有されます。`context.xml`の設定は不要です。
 
-### 5-1. ログイン用 SPA
+## 4. React
+
+### 4-1. ログイン用 SPA
 
 #### ログイン
 
 ```javascript
-const response = await fetch("http://localhost:8080/login-app/api/login", {
+const response = await fetch("http://localhost:8080/business-app/api/login", {
   method: "POST",
   headers: { "Content-Type": "application/x-www-form-urlencoded" },
   body: new URLSearchParams({ username, password }),
@@ -243,7 +205,7 @@ if (response.ok && data.success) {
 #### セッション確認
 
 ```javascript
-const response = await fetch("http://localhost:8080/login-app/api/session", {
+const response = await fetch("http://localhost:8080/business-app/api/session", {
   method: "GET",
   credentials: "include"
 });
@@ -259,7 +221,7 @@ if (data.loggedIn) {
 #### ログアウト
 
 ```javascript
-const response = await fetch("http://localhost:8080/login-app/api/logout", {
+const response = await fetch("http://localhost:8080/business-app/api/logout", {
   method: "POST",
   credentials: "include"
 });
@@ -270,7 +232,7 @@ if (data.success) {
 }
 ```
 
-### 5-2. 実務用 SPA
+### 4-2. 実務用 SPA
 
 #### データ取得（セッション確認含む）
 
@@ -289,33 +251,27 @@ if (response.ok) {
 }
 ```
 
-## 6. 確認手順
+## 5. 確認手順
 
-### 6-1. セッション共有の確認（アプリケーション間）
+### 5-1. セッション共有の確認（SPA間）
 
 1. ログイン用 SPA（localhost:3000）でログイン（username: "testuser", password: "secret"）
 2. 実務用 SPA（localhost:3001）から `business-app/api/data` を叩く
 3. レスポンスステータスが 200 で、データが取得できればセッション共有成功
 
-### 6-2. セッション共有の確認（SPA間）
-
-1. ログイン用 SPA A（localhost:3000）でログイン
-2. ログイン用 SPA B（localhost:3001）から `login-app/api/session` を叩く
-3. `loggedIn` が `true` ならセッション共有成功
-
-### 6-3. エラーハンドリングの確認
+### 5-2. エラーハンドリングの確認
 
 1. **ログイン失敗**：間違った認証情報でログインを試みる
    - レスポンスステータスが 401（UNAUTHORIZED）であること
    - レスポンスボディに `{"success": false, "error": "Invalid username or password"}` が含まれること
 
-2. **未ログイン状態でのアクセス（ログイン用アプリ）**：ログインせずに `login-app/api/session` を叩く
+2. **未ログイン状態でのアクセス（セッション確認）**：ログインせずに `business-app/api/session` を叩く
    - レスポンスボディに `{"loggedIn": false}` が返されること
 
-3. **未ログイン状態でのアクセス（実務用アプリ）**：ログインせずに `business-app/api/data` を叩く
+3. **未ログイン状態でのアクセス（業務用API）**：ログインせずに `business-app/api/data` を叩く
    - レスポンスステータスが 401（UNAUTHORIZED）であること
    - レスポンスボディに `{"error": "Not logged in"}` が含まれること
 
 4. **ログアウト**：ログイン後にログアウト API を叩き、その後各 API を確認
-   - ログアウト後、`login-app/api/session` で `{"loggedIn": false}` が返されること
+   - ログアウト後、`business-app/api/session` で `{"loggedIn": false}` が返されること
    - ログアウト後、`business-app/api/data` で 401 エラーが返されること

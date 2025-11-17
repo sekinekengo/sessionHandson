@@ -2,26 +2,29 @@
 
 ## プロジェクト構成
 
-- `login-app/`: ログイン用Spring Bootアプリケーション
-- `business-app/`: 実務用Spring Bootアプリケーション
+- `business-app/`: 業務用Spring Bootアプリケーション（ログイン機能と業務機能を含む）
 - `login-spa/`: ログイン用React SPA（ポート3000）
 - `business-spa/`: 実務用React SPA（ポート3001）
 - `handson.md`: ハンズオンドキュメント
 
 ## セットアップ
 
-### バックエンドのビルド
+### Java 21の設定
 
-#### ログイン用アプリケーション
+SDKMANでJava 21を使用する場合：
 
 ```bash
-cd login-app
-mvn clean package
+export JAVA_HOME=~/.sdkman/candidates/java/21.0.8-tem
+export PATH=$JAVA_HOME/bin:$PATH
 ```
 
-生成されたWARファイル: `target/login-app.war`
+または、SDKMANで切り替え：
 
-#### 実務用アプリケーション
+```bash
+sdk use java 21.0.8-tem
+```
+
+### バックエンドのビルド
 
 ```bash
 cd business-app
@@ -32,15 +35,27 @@ mvn clean package
 
 ### Tomcatへのデプロイ
 
-1. WARファイルをTomcatの`webapps`ディレクトリに配置：
-   - `login-app.war` → `$CATALINA_HOME/webapps/login-app.war`
-   - `business-app.war` → `$CATALINA_HOME/webapps/business-app.war`
+プロジェクトには既にTomcat 10.1.20が含まれています。
 
-2. Tomcatを起動
+1. WARファイルをビルド後、自動的に`tomcat/webapps/`に配置されます
 
-3. アクセスURL：
-   - ログイン用：`http://localhost:8080/login-app/api/...`
-   - 実務用：`http://localhost:8080/business-app/api/...`
+2. Tomcatの起動：
+   ```bash
+   ./tomcat-start.sh
+   ```
+
+3. Tomcatの停止：
+   ```bash
+   ./tomcat-stop.sh
+   ```
+
+4. アクセスURL：
+   - ログイン用：`http://localhost:8080/business-app/api/login`
+   - セッション確認：`http://localhost:8080/business-app/api/session`
+   - ログアウト：`http://localhost:8080/business-app/api/logout`
+   - 業務用：`http://localhost:8080/business-app/api/data`
+
+**注意**: Tomcat起動スクリプトはJava 21を使用します。Java 21がSDKMANにインストールされている必要があります。
 
 ### フロントエンドの起動
 

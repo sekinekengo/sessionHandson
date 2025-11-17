@@ -15,7 +15,7 @@ function App() {
 
   const checkSession = async () => {
     try {
-      const response = await fetch("http://localhost:8080/login-app/api/session", {
+      const response = await fetch("http://localhost:8080/business-app/api/session", {
         method: "GET",
         credentials: "include"
       })
@@ -38,7 +38,7 @@ function App() {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:8080/login-app/api/login", {
+      const response = await fetch("http://localhost:8080/business-app/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({ username, password }),
@@ -63,7 +63,7 @@ function App() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:8080/login-app/api/logout", {
+      const response = await fetch("http://localhost:8080/business-app/api/logout", {
         method: "POST",
         credentials: "include"
       })

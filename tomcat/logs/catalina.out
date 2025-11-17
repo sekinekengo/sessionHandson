@@ -1,0 +1,312 @@
+16-Nov-2025 17:50:10.842 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.20
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Mar 19 2024 12:49:58 UTC
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.20.0
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            15.6.1
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Users/sekinekengo/.sdkman/candidates/java/21.0.8-tem
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.8+9-LTS
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 17:50:10.844 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 17:50:10.871 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/sekinekengo/Desktop/sessionHandson/tomcat/conf/logging.properties
+16-Nov-2025 17:50:10.871 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Nov-2025 17:50:10.871 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+16-Nov-2025 17:50:10.871 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Nov-2025 17:50:10.871 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Nov-2025 17:50:10.871 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Nov-2025 17:50:10.871 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+16-Nov-2025 17:50:10.871 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+16-Nov-2025 17:50:10.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Nov-2025 17:50:10.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Nov-2025 17:50:10.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 17:50:10.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 17:50:10.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/sekinekengo/Desktop/sessionHandson/tomcat/temp
+16-Nov-2025 17:50:10.876 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/sekinekengo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+16-Nov-2025 17:50:10.974 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+16-Nov-2025 17:50:10.984 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [215] ミリ秒
+16-Nov-2025 17:50:10.998 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+16-Nov-2025 17:50:10.998 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.20]
+16-Nov-2025 17:50:11.004 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app.war] を配備します
+16-Nov-2025 17:50:11.010 警告 [main] org.apache.tomcat.util.digester.Digester.endElement [Context/SessionCookiePath]と一致するルールは見つかりませんでした。
+16-Nov-2025 17:50:11.590 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-11-16T17:50:11.804+09:00  INFO 14363 --- [           main] com.example.businessapp.BusinessApp      : Starting BusinessApp v0.0.1-SNAPSHOT using Java 21.0.8 with PID 14363 (/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app/WEB-INF/classes started by sekinekengo in /Users/sekinekengo/Desktop/sessionHandson)
+2025-11-16T17:50:11.805+09:00  INFO 14363 --- [           main] com.example.businessapp.BusinessApp      : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T17:50:12.046+09:00  INFO 14363 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 230 ms
+2025-11-16T17:50:12.226+09:00  INFO 14363 --- [           main] com.example.businessapp.BusinessApp      : Started BusinessApp in 0.569 seconds (process running for 1.555)
+16-Nov-2025 17:50:12.238 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app.war] の配備は [1,233] ミリ秒で完了しました
+16-Nov-2025 17:50:12.239 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app.war] を配備します
+16-Nov-2025 17:50:12.239 警告 [main] org.apache.tomcat.util.digester.Digester.endElement [Context/SessionCookiePath]と一致するルールは見つかりませんでした。
+16-Nov-2025 17:50:12.654 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-11-16T17:50:12.805+09:00  INFO 14363 --- [           main] com.example.loginapp.LoginApp            : Starting LoginApp v0.0.1-SNAPSHOT using Java 21.0.8 with PID 14363 (/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app/WEB-INF/classes started by sekinekengo in /Users/sekinekengo/Desktop/sessionHandson)
+2025-11-16T17:50:12.806+09:00  INFO 14363 --- [           main] com.example.loginapp.LoginApp            : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T17:50:13.000+09:00  INFO 14363 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2025-11-16T17:50:13.151+09:00  INFO 14363 --- [           main] com.example.loginapp.LoginApp            : Started LoginApp in 0.452 seconds (process running for 2.48)
+16-Nov-2025 17:50:13.153 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app.war] の配備は [914] ミリ秒で完了しました
+16-Nov-2025 17:50:13.153 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/docs] を配備します
+16-Nov-2025 17:50:13.159 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/docs] の Web アプリケーションの配備は [6] ミリ秒で完了しました。
+16-Nov-2025 17:50:13.159 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/manager] を配備します
+16-Nov-2025 17:50:13.167 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/manager] の Web アプリケーションの配備は [7] ミリ秒で完了しました。
+16-Nov-2025 17:50:13.167 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/examples] を配備します
+16-Nov-2025 17:50:13.210 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/examples] の Web アプリケーションの配備は [43] ミリ秒で完了しました。
+16-Nov-2025 17:50:13.210 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/ROOT] を配備します
+16-Nov-2025 17:50:13.215 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/ROOT] の Web アプリケーションの配備は [5] ミリ秒で完了しました。
+16-Nov-2025 17:50:13.215 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/host-manager] を配備します
+16-Nov-2025 17:50:13.219 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/host-manager] の Web アプリケーションの配備は [4] ミリ秒で完了しました。
+16-Nov-2025 17:50:13.220 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+16-Nov-2025 17:50:13.224 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [2239] ミリ秒
+2025-11-16T17:50:21.694+09:00  INFO 14363 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-16T17:50:21.694+09:00  INFO 14363 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-16T17:50:33.645+09:00  INFO 14363 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-16T17:50:33.646+09:00  INFO 14363 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+16-Nov-2025 21:28:36.572 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+16-Nov-2025 21:28:36.572 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+16-Nov-2025 21:28:36.574 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+16-Nov-2025 21:28:36.610 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+16-Nov-2025 21:28:36.612 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+16-Nov-2025 21:28:39.965 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.20
+16-Nov-2025 21:28:39.966 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Mar 19 2024 12:49:58 UTC
+16-Nov-2025 21:28:39.966 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.20.0
+16-Nov-2025 21:28:39.966 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+16-Nov-2025 21:28:39.967 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            15.6.1
+16-Nov-2025 21:28:39.967 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+16-Nov-2025 21:28:39.967 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Users/sekinekengo/.sdkman/candidates/java/21.0.8-tem
+16-Nov-2025 21:28:39.967 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.8+9-LTS
+16-Nov-2025 21:28:39.967 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+16-Nov-2025 21:28:39.967 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 21:28:39.967 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/sekinekengo/Desktop/sessionHandson/tomcat/conf/logging.properties
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Nov-2025 21:28:39.971 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Nov-2025 21:28:39.972 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 21:28:39.972 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 21:28:39.972 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/sekinekengo/Desktop/sessionHandson/tomcat/temp
+16-Nov-2025 21:28:39.975 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/sekinekengo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+16-Nov-2025 21:28:40.070 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+16-Nov-2025 21:28:40.080 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [173] ミリ秒
+16-Nov-2025 21:28:40.093 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+16-Nov-2025 21:28:40.093 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.20]
+16-Nov-2025 21:28:40.102 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app.war] を配備します
+16-Nov-2025 21:28:40.107 情報 [main] org.apache.catalina.startup.ExpandWar.expand 関連付けられた WAR ファイルと最終更新日時の異なる展開先ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app] が見つかりました。削除します。
+16-Nov-2025 21:28:40.653 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-11-16T21:28:40.879+09:00  INFO 19033 --- [           main] com.example.businessapp.BusinessApp      : Starting BusinessApp v0.0.1-SNAPSHOT using Java 21.0.8 with PID 19033 (/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app/WEB-INF/classes started by sekinekengo in /Users/sekinekengo/Desktop/sessionHandson)
+2025-11-16T21:28:40.880+09:00  INFO 19033 --- [           main] com.example.businessapp.BusinessApp      : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T21:28:41.149+09:00  INFO 19033 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 250 ms
+2025-11-16T21:28:41.349+09:00  INFO 19033 --- [           main] com.example.businessapp.BusinessApp      : Started BusinessApp in 0.629 seconds (process running for 1.525)
+16-Nov-2025 21:28:41.363 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app.war] の配備は [1,260] ミリ秒で完了しました
+16-Nov-2025 21:28:41.364 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app.war] を配備します
+16-Nov-2025 21:28:41.365 情報 [main] org.apache.catalina.startup.ExpandWar.expand 関連付けられた WAR ファイルと最終更新日時の異なる展開先ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app] が見つかりました。削除します。
+16-Nov-2025 21:28:41.802 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-11-16T21:28:41.959+09:00  INFO 19033 --- [           main] com.example.loginapp.LoginApp            : Starting LoginApp v0.0.1-SNAPSHOT using Java 21.0.8 with PID 19033 (/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app/WEB-INF/classes started by sekinekengo in /Users/sekinekengo/Desktop/sessionHandson)
+2025-11-16T21:28:41.960+09:00  INFO 19033 --- [           main] com.example.loginapp.LoginApp            : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T21:28:42.204+09:00  INFO 19033 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 234 ms
+2025-11-16T21:28:42.452+09:00  INFO 19033 --- [           main] com.example.loginapp.LoginApp            : Started LoginApp in 0.601 seconds (process running for 2.628)
+16-Nov-2025 21:28:42.454 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app.war] の配備は [1,090] ミリ秒で完了しました
+16-Nov-2025 21:28:42.455 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/docs] を配備します
+16-Nov-2025 21:28:42.461 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/docs] の Web アプリケーションの配備は [6] ミリ秒で完了しました。
+16-Nov-2025 21:28:42.462 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/manager] を配備します
+16-Nov-2025 21:28:42.472 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/manager] の Web アプリケーションの配備は [10] ミリ秒で完了しました。
+16-Nov-2025 21:28:42.472 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/examples] を配備します
+16-Nov-2025 21:28:42.511 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/examples] の Web アプリケーションの配備は [39] ミリ秒で完了しました。
+16-Nov-2025 21:28:42.511 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/ROOT] を配備します
+16-Nov-2025 21:28:42.515 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/ROOT] の Web アプリケーションの配備は [4] ミリ秒で完了しました。
+16-Nov-2025 21:28:42.515 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/host-manager] を配備します
+16-Nov-2025 21:28:42.520 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/host-manager] の Web アプリケーションの配備は [5] ミリ秒で完了しました。
+16-Nov-2025 21:28:42.522 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+16-Nov-2025 21:28:42.526 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [2445] ミリ秒
+2025-11-16T21:28:51.889+09:00  INFO 19033 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-16T21:28:51.889+09:00  INFO 19033 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-16T21:28:53.873+09:00  INFO 19033 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-16T21:28:53.874+09:00  INFO 19033 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+16-Nov-2025 22:03:39.653 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+16-Nov-2025 22:03:39.653 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+16-Nov-2025 22:03:39.655 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+16-Nov-2025 22:03:39.697 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+16-Nov-2025 22:03:39.702 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+16-Nov-2025 22:03:42.883 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.20
+16-Nov-2025 22:03:42.884 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Mar 19 2024 12:49:58 UTC
+16-Nov-2025 22:03:42.884 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.20.0
+16-Nov-2025 22:03:42.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+16-Nov-2025 22:03:42.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            15.6.1
+16-Nov-2025 22:03:42.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+16-Nov-2025 22:03:42.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Users/sekinekengo/.sdkman/candidates/java/21.0.8-tem
+16-Nov-2025 22:03:42.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.8+9-LTS
+16-Nov-2025 22:03:42.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+16-Nov-2025 22:03:42.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 22:03:42.885 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/sekinekengo/Desktop/sessionHandson/tomcat/conf/logging.properties
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+16-Nov-2025 22:03:42.890 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 22:03:42.891 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/sekinekengo/Desktop/sessionHandson/tomcat
+16-Nov-2025 22:03:42.891 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/sekinekengo/Desktop/sessionHandson/tomcat/temp
+16-Nov-2025 22:03:42.894 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/sekinekengo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+16-Nov-2025 22:03:42.986 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+16-Nov-2025 22:03:42.996 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [182] ミリ秒
+16-Nov-2025 22:03:43.008 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+16-Nov-2025 22:03:43.008 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.20]
+16-Nov-2025 22:03:43.017 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app.war] を配備します
+16-Nov-2025 22:03:43.022 情報 [main] org.apache.catalina.startup.ExpandWar.expand 関連付けられた WAR ファイルと最終更新日時の異なる展開先ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app] が見つかりました。削除します。
+16-Nov-2025 22:03:43.580 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-11-16T22:03:43.804+09:00  INFO 24172 --- [           main] com.example.businessapp.BusinessApp      : Starting BusinessApp v0.0.1-SNAPSHOT using Java 21.0.8 with PID 24172 (/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app/WEB-INF/classes started by sekinekengo in /Users/sekinekengo/Desktop/sessionHandson)
+2025-11-16T22:03:43.805+09:00  INFO 24172 --- [           main] com.example.businessapp.BusinessApp      : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T22:03:44.059+09:00  INFO 24172 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 241 ms
+2025-11-16T22:03:44.264+09:00  INFO 24172 --- [           main] com.example.businessapp.BusinessApp      : Started BusinessApp in 0.614 seconds (process running for 1.541)
+16-Nov-2025 22:03:44.277 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app.war] の配備は [1,259] ミリ秒で完了しました
+16-Nov-2025 22:03:44.279 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app.war] を配備します
+16-Nov-2025 22:03:44.280 情報 [main] org.apache.catalina.startup.ExpandWar.expand 関連付けられた WAR ファイルと最終更新日時の異なる展開先ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app] が見つかりました。削除します。
+16-Nov-2025 22:03:44.721 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-11-16T22:03:44.884+09:00  INFO 24172 --- [           main] com.example.loginapp.LoginApp            : Starting LoginApp v0.0.1-SNAPSHOT using Java 21.0.8 with PID 24172 (/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app/WEB-INF/classes started by sekinekengo in /Users/sekinekengo/Desktop/sessionHandson)
+2025-11-16T22:03:44.885+09:00  INFO 24172 --- [           main] com.example.loginapp.LoginApp            : No active profile set, falling back to 1 default profile: "default"
+2025-11-16T22:03:45.093+09:00  INFO 24172 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2025-11-16T22:03:45.278+09:00  INFO 24172 --- [           main] com.example.loginapp.LoginApp            : Started LoginApp in 0.506 seconds (process running for 2.554)
+16-Nov-2025 22:03:45.281 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/login-app.war] の配備は [1,002] ミリ秒で完了しました
+16-Nov-2025 22:03:45.281 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/docs] を配備します
+16-Nov-2025 22:03:45.289 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/docs] の Web アプリケーションの配備は [8] ミリ秒で完了しました。
+16-Nov-2025 22:03:45.289 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/manager] を配備します
+16-Nov-2025 22:03:45.302 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/manager] の Web アプリケーションの配備は [13] ミリ秒で完了しました。
+16-Nov-2025 22:03:45.302 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/examples] を配備します
+16-Nov-2025 22:03:45.352 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/examples] の Web アプリケーションの配備は [50] ミリ秒で完了しました。
+16-Nov-2025 22:03:45.352 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/ROOT] を配備します
+16-Nov-2025 22:03:45.357 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/ROOT] の Web アプリケーションの配備は [5] ミリ秒で完了しました。
+16-Nov-2025 22:03:45.358 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/host-manager] を配備します
+16-Nov-2025 22:03:45.364 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/host-manager] の Web アプリケーションの配備は [6] ミリ秒で完了しました。
+16-Nov-2025 22:03:45.366 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+16-Nov-2025 22:03:45.371 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [2374] ミリ秒
+2025-11-16T22:03:53.812+09:00  INFO 24172 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-16T22:03:53.812+09:00  INFO 24172 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-11-16T22:03:53.861+09:00  INFO 24172 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-16T22:03:53.862+09:00  INFO 24172 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+17-Nov-2025 12:44:12.603 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+17-Nov-2025 12:44:12.603 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+17-Nov-2025 12:44:12.605 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+17-Nov-2025 12:44:12.644 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+17-Nov-2025 12:44:12.656 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+17-Nov-2025 12:44:16.776 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.20
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Mar 19 2024 12:49:58 UTC
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.20.0
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            15.6.1
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Users/sekinekengo/.sdkman/candidates/java/21.0.8-tem
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           21.0.8+9-LTS
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Eclipse Adoptium
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/sekinekengo/Desktop/sessionHandson/tomcat
+17-Nov-2025 12:44:16.777 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/sekinekengo/Desktop/sessionHandson/tomcat
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/sekinekengo/Desktop/sessionHandson/tomcat/conf/logging.properties
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/sekinekengo/Desktop/sessionHandson/tomcat
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/sekinekengo/Desktop/sessionHandson/tomcat
+17-Nov-2025 12:44:16.782 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/sekinekengo/Desktop/sessionHandson/tomcat/temp
+17-Nov-2025 12:44:16.788 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/sekinekengo/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+17-Nov-2025 12:44:16.878 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+17-Nov-2025 12:44:16.889 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [177] ミリ秒
+17-Nov-2025 12:44:16.901 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+17-Nov-2025 12:44:16.901 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.20]
+17-Nov-2025 12:44:16.908 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Webアプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app.war] を配備します
+17-Nov-2025 12:44:16.913 情報 [main] org.apache.catalina.startup.ExpandWar.expand 関連付けられた WAR ファイルと最終更新日時の異なる展開先ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app] が見つかりました。削除します。
+17-Nov-2025 12:44:17.490 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2025-11-17T12:44:17.710+09:00  INFO 99933 --- [           main] com.example.businessapp.BusinessApp      : Starting BusinessApp v0.0.1-SNAPSHOT using Java 21.0.8 with PID 99933 (/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app/WEB-INF/classes started by sekinekengo in /Users/sekinekengo/Desktop/sessionHandson)
+2025-11-17T12:44:17.711+09:00  INFO 99933 --- [           main] com.example.businessapp.BusinessApp      : No active profile set, falling back to 1 default profile: "default"
+2025-11-17T12:44:17.975+09:00  INFO 99933 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 253 ms
+2025-11-17T12:44:18.168+09:00  INFO 99933 --- [           main] com.example.businessapp.BusinessApp      : Started BusinessApp in 0.61 seconds (process running for 1.542)
+17-Nov-2025 12:44:18.181 情報 [main] org.apache.catalina.startup.HostConfig.deployWAR Web アプリケーションアーカイブ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/business-app.war] の配備は [1,272] ミリ秒で完了しました
+17-Nov-2025 12:44:18.181 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/docs] を配備します
+17-Nov-2025 12:44:18.189 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/docs] の Web アプリケーションの配備は [8] ミリ秒で完了しました。
+17-Nov-2025 12:44:18.189 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/manager] を配備します
+17-Nov-2025 12:44:18.198 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/manager] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+17-Nov-2025 12:44:18.198 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/examples] を配備します
+17-Nov-2025 12:44:18.250 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/examples] の Web アプリケーションの配備は [52] ミリ秒で完了しました。
+17-Nov-2025 12:44:18.250 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/ROOT] を配備します
+17-Nov-2025 12:44:18.254 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/ROOT] の Web アプリケーションの配備は [4] ミリ秒で完了しました。
+17-Nov-2025 12:44:18.254 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/host-manager] を配備します
+17-Nov-2025 12:44:18.260 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/sekinekengo/Desktop/sessionHandson/tomcat/webapps/host-manager] の Web アプリケーションの配備は [6] ミリ秒で完了しました。
+17-Nov-2025 12:44:18.261 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+17-Nov-2025 12:44:18.265 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [1375] ミリ秒
+2025-11-17T12:44:28.284+09:00  INFO 99933 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-17T12:44:28.284+09:00  INFO 99933 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
